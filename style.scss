@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300&display=swap');
+@import "./node_modules/animate.css/animate.min.css";
+
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+$primary : hsl(180, 66%, 49%);
+$secondary :hsl(257, 27%, 26%);
+
+$gray : hsl(257, 7%, 63%);
+
+@import './node_modules/bootstrap/scss/bootstrap';
+.site-navbar-onscroll{
+    background-color: rgba(255, 255, 255, 0.8);
+    /* box-shadow : box-shadow-sm; */
+    backdrop-filter : blur(5px) contrast(180%);
+    animation : fadeInDown 1s ease-in-out;
+
+}
+#nav{
+    backdrop-filter: blur(16px) saturate(166%);
+    -webkit-backdrop-filter: blur(16px) saturate(166%);
+    background-color: rgba(255, 255, 255, 0.45);
+    z-index: 1008;
+   
+}
+
+.img-home2{
+    background-image: url("./images/bg-shorten-desktop.svg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.img-footer{
+    background-image: url("./images/bg-boost-desktop.svg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.bg-one{
+    background-color:#f2f5f7;
+}
+.row-one{
+    margin-top: -30px;
+}
+.card-body{
+    margin-top: -30px;
+    padding: 45px;
+}
+.card-img{
+    width: 80px;
+}
+.card-two{
+    margin-top: 50px;
+}
+.card-three{
+    margin-top: 100px;
+}
+.line{
+    line-height: 50px;
+}
+
+@media screen and (max-width:900px) {
+    .card-one,.card-two,.card-three{
+        text-align: center;
+    }
+   
+}
